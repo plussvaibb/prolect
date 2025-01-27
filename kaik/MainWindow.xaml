@@ -1,0 +1,49 @@
+﻿<Window x:Class="kaik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kaik"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid x:Name="Main">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Здравствуйте!" Grid.ColumnSpan="4" x:Name="textLabel" FontSize="48" />
+        <TextBlock Grid.Row="0" FontSize="48" Visibility="Hidden"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Необходимо авторизоваться:" Grid.ColumnSpan="4" x:Name="textLabel2" FontSize="48" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Имя:" Grid.ColumnSpan="1" x:Name="textLabel3" FontSize="48" />
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Пароль:" Grid.ColumnSpan="1" x:Name="textLabel5" FontSize="48" />
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" FontSize="48" Click="Button_Click_1" x:Name="button_enter" Background="#FFE60707">Войти в калькулятор</Button>
+        <Button Grid.Row="1" Grid.Column="0" FontSize="48" Visibility="Hidden" x:Name="b1">1</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="48" Visibility="Hidden" x:Name="b2">2</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="48" Visibility="Hidden" x:Name="b3">3</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="48" Visibility="Hidden" x:Name="b4">4</Button>
+        <Button Grid.Column="1" Grid.Row="2" FontSize="48" Visibility="Hidden" x:Name="b5">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="48" Visibility="Hidden" x:Name="b6">6</Button>
+        <Button Grid.Column="0" Grid.Row="3" FontSize="48" Visibility="Hidden" x:Name="b7">7</Button>
+        <Button Grid.Column="1" Grid.Row="3" FontSize="48" Visibility="Hidden" x:Name="b8">8</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="48" Visibility="Hidden" x:Name="b9">9</Button>
+        <Button Grid.Column="0" Grid.Row="4" FontSize="48" Visibility="Hidden" x:Name="b10">0</Button>
+        <Button Grid.Column="4" Grid.Row="1" FontSize="48" Visibility="Hidden" x:Name="b11">+</Button>
+        <Button Grid.Column="4" Grid.Row="2" FontSize="48" Visibility="Hidden" x:Name="b12">-</Button>
+        <Button Grid.Column="4" Grid.Row="3" FontSize="48" Visibility="Hidden" x:Name="b13">*</Button>
+        <Button Grid.Column="4" Grid.Row="4" FontSize="48" Visibility="Hidden" x:Name="b14">/</Button>
+        <Button Grid.Column="1" Grid.Row="4" FontSize="48" Visibility="Hidden" x:Name="b15">=</Button>
+        <Button Grid.Column="2" Grid.Row="4" FontSize="48" Visibility="Hidden" x:Name="b16">AC</Button>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="575" Height="81" TextChanged="TextBox_TextChanged" FontSize="48" Grid.Column="1" Grid.ColumnSpan="3" Background="#FFF0E31B"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="575" Height="81" TextChanged="TextBox_TextChanged" FontSize="48" Grid.Column="1" Grid.ColumnSpan="3" Background="#FFF0E209"/>
+    </Grid>
+</Window>
